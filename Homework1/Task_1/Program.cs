@@ -17,7 +17,7 @@ if (FirstNumber > SecondNumber)
 else if (SecondNumber > FirstNumber)
 {
     Console.WriteLine("Max = " + SecondNumber);
-    Console.WriteLine("Min = " + FirstNumber);    
+    Console.WriteLine("Min = " + FirstNumber);
 }
 else
-Console.WriteLine("Числа равны");   
+    Console.WriteLine("Числа равны");
