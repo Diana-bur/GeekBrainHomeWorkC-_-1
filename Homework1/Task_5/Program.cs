@@ -1,2 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая принимает на вход целое число любой разрядности и 
+// на выходе показывает вторую цифру слева этого числа или говорит, что такой цифры нет. 
+// Через строку решать нельзя.
+
+// 456111 -> 5
+// 78 -> 8
+// 9146548 -> 1
+// 3 -> нет
+
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num > 9)
+{
+    while (num >= 100)
+    {
+        num = num / 10;
+    }
+    Console.WriteLine(num % 10);
+}
+else
+    Console.WriteLine("Такой цифры нет");
+
